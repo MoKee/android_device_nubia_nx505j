@@ -12,19 +12,11 @@
     "target_path": "device/qcom/common"
   },
   {
-    "repository": "android_hardware_qcom_fm",
-    "target_path": "hardware/qcom/fm"
-  },
-  {
     "repository": "android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings"
   },
   {
     "repository": "android_packages_apps_FlipFlap",
     "target_path": "packages/apps/FlipFlap"
-  },
-  {
-    "repository": "arm-cortex_a15-linux-gnueabihf-linaro_4.9",
-    "target_path": "prebuilts/gcc/linux-x86/arm/arm-cortex_a15-linux-gnueabihf-linaro_4.9"
   }
 ]
