@@ -72,7 +72,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-cortex_a15-linux-gnueabihf-linaro_4.9/bin/arm-cortex_a15-linux-gnueabihf-
 TARGET_KERNEL_SOURCE := kernel/nubia/nx505j
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_CONFIG := lineage_nx505j_nomodules_defconfig
+TARGET_KERNEL_CONFIG := mokee_nx505j_nomodules_defconfig
 TARGET_ZTEMT_DTS := true
 
 # Power
@@ -149,12 +149,12 @@ TARGET_NO_RPC := true
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
 
-# CMHW
+# MKHW
 TARGET_TAP_TO_WAKE_NODE := "/data/tp/easy_wakeup_gesture"
-BOARD_USES_CYANOGEN_HARDWARE := true
+BOARD_USES_MOKEE_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    device/nubia/nx505j/cmhw
+    hardware/mokee/mkhw \
+    device/nubia/nx505j/mkhw
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
